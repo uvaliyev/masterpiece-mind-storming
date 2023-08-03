@@ -22,7 +22,7 @@ const Page = () => {
 
         const question = `Imagine you are a teacher, write a lesson plan on ${lessonTopic} for ${studentClass}, more in detail: ${description}. Give me plan in markdown format.`;
         try {
-            const result = await axios.post('https://masterpiece-mind-storming-eb4h-qcanser-s-team.vercel.app/app/api', { question });
+            const result = await axios.post('http://api.tyan.by/app/api', { question });
             setOutput(result.data.result);
         } catch (error) {
             setOutput('An error occurred while fetching the response.');
