@@ -73,7 +73,7 @@ const LessonPlanGenerator = () => {
                     <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="Открытые множества, компактность." />
                 </div>
 
-                <Button onClick={handleSubmit} >{isLoading ? "Генерируем..." : "Сэкономить время (кнопка)"}</Button>
+                <Button onClick={handleSubmit} >{isLoading ? 'Генерируем...' : 'Сэкономить время (кнопка)'}</Button>
             </div>
             <div className="col-span-5 rounded-3xl bg-white p-5 flex flex-col items-center justify-center">
                 <div className='space-y-4'>
@@ -82,9 +82,9 @@ const LessonPlanGenerator = () => {
                             Идет генерация
                         </>
                     ) : output ? (
-                        <p className="scroll-m-20 tracking-tight text-base break-words whitespace-pre-line">
-                            Идет генерация
-                        </p>
+                        <div className="scroll-m-20 tracking-tight text-base break-words whitespace-pre-line">
+                            <Markdown options={markdownOptions}>{output}</Markdown> {/* Rendering markdown with Tailwind CSS styles */}
+                        </div>
                     ) : (
                         <>
                             <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-4xl">
@@ -95,7 +95,6 @@ const LessonPlanGenerator = () => {
                             </h2>
                             <Image className="rounded-xl" src={Doner} alt="Big doner" width={500} height={300} />
                         </>
-
                     )}
                 </div>
             </div>
