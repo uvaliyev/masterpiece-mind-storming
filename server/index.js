@@ -68,6 +68,6 @@ app.post("/app/api", async (req, res) => {
 
 const server = http.createServer(app);
 
-server.listen(PORT, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log("Server started");
 });
