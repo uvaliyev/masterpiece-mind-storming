@@ -20,7 +20,7 @@ const Page = () => {
         setIsLoading(true);
         setOutput("");
 
-        const question = `Imagine you are a teacher, write a lesson plan on ${lessonTopic} for ${studentClass}, more in detail: ${description}. Give me plan in markdown format.`;
+        const question = `Imagine you are a teacher, write a lesson plan on ${lessonTopic} for ${studentClass}, more in detail: ${description}. If lesson topic and student class given in Russian, then give me plan in Russian. Use only markdown format.`;
         try {
             const result = await axios.post('https://api.tyan.by/app/api', { question });
             setOutput(result.data.result);
