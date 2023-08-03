@@ -23,7 +23,7 @@ const LessonPlanGenerator = () => {
 
         const question = `Imagine you are a teacher, write a lesson plan on ${lessonTopic} for ${studentClass}, more in detail: ${description}. Give me plan in markdown format.`;
         try {
-            const result = await axios.post('http://localhost:8080/app/api', { question });
+            const result = await axios.post('https://tyan.by/app/api', { question });
             setOutput(result.data.result);
         } catch (error) {
             setOutput('An error occurred while fetching the response.');
