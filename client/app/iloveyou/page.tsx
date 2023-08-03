@@ -74,7 +74,7 @@ const Page = () => {
 
                     <Button onClick={handleSubmit} >{isLoading ? 'Генерируем...' : 'Сэкономить время (кнопка)'}</Button> {/* Escaped the quotes */}
                 </div>
-                <div className="w-full md:w-3/5">
+                <div className="w-full md:w-3/5 md:items-center">
                     <div className='space-y-4'>
                         {isLoading ? (
                             <>
