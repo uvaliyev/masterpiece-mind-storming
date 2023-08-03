@@ -4,6 +4,7 @@ export const metadata = {
 }
 
 import Hero from '../components/hero'
+import { Analytics } from '@vercel/analytics/react';
 import Features from '../components/features'
 import FeaturesBlocks from '../components/features-blocks'
 import Testimonials from '../components/testimonials'
@@ -15,6 +16,7 @@ export default function Home() {
             <Features />
             <FeaturesBlocks />
             <Testimonials />
+            <Analytics />
         </>
     )
 }
