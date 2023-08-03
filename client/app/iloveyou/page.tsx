@@ -54,8 +54,8 @@ const Page = () => {
 
     return (
         <>
-            <div className="grid grid-cols-10 rounded-xl shadow-md p-5 gap-4">
-                <div className="col-span-5 rounded-3xl bg-white p-5 space-y-4">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 space-x-8 mx-auto max-w-4xl p-4">
+                <div className="w-full md:w-2/5 md:items-center">
                     <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-4xl">
                         Сгенерировать план урока
                     </h1>
@@ -74,7 +74,7 @@ const Page = () => {
 
                     <Button onClick={handleSubmit} >{isLoading ? 'Генерируем...' : 'Сэкономить время (кнопка)'}</Button> {/* Escaped the quotes */}
                 </div>
-                <div className="col-span-5 rounded-3xl bg-white p-5 flex flex-col items-center justify-center">
+                <div className="w-full md:w-3/5">
                     <div className='space-y-4'>
                         {isLoading ? (
                             <>

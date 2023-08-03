@@ -15,7 +15,7 @@ const Faq = () => {
         },
         {
             question: 'Как можно связатсья с разработчком?',
-            answer: 'По телеграмму, <a href="@uvaliyev_a" title="" class="text-blue-600 transition-all duration-200 hover:underline">https://t.me/uvaliyev_a</a>.',
+            answer: 'Через телеграмм, <a href="@uvaliyev_a" title="" class="text-blue-600 transition-all duration-200 hover:underline">@uvaliyev_a</a>.',
             open: false
         }
     ]);
