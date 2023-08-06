@@ -20,7 +20,7 @@ const Page = () => {
         setIsLoading(true);
         setOutput("");
 
-        const question = `Өзіңізді мұғалім ретінде елестетіп көріңіз, ТАҚЫРЫП: [${lessonTopic}] СТУДЕНТ СЫНЫПЫ: [${studentClass}] бойынша сабақ жоспарын жазыңыз, толығырақ: ${description}. Сабақ тақырыбы немесе студенттік сынып орыс тілінде берілсе, ЖОСПАРЫҢЫЗДЫ АҒЫЛШЫН ТІЛІНДЕ ЕМЕС, ОРЫС ТІЛІНДЕ ЖАЗУ КЕРЕК. Markdown пайдаланыңыз.`;
+        const question = `Imagine you are a teacher, write a lesson plan on TOPIC: [${lessonTopic}] for STUDENT GRADE: [${studentClass}], more in detail: ${description}. If lesson topic or student class given in Russian, YOU MUST WRITE YOUR PLAN IN RUSSIAN LANGUAGE, NO ENGLISH. Use only markdown format.`;
         try {
             const result = await axios.post('https://api.tyan.by/app/api', { question });
             setOutput(result.data.result);
