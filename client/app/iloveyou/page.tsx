@@ -57,19 +57,19 @@ const Page = () => {
             <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 space-x-8 mx-auto max-w-4xl p-4">
                 <div className="w-full md:w-2/5 md:items-center">
                     <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-4xl">
-                        Сабақ жоспарын құру
+                        Сабақ жоспарын құру (БЕТА)
                     </h1>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
                         <Label htmlFor="lessonTopic">Сабақтың атауы</Label>
                         <Input type="text" id="lessonTopic" value={lessonTopic} onChange={e => setLessonTopic(e.target.value)} placeholder="Топология" />
                     </div>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
-                        <Label htmlFor="studentClass">Класс ученика</Label>
+                        <Label htmlFor="studentClass">Оқушыларының сыныбы</Label>
                         <Input type="text" id="studentClass" value={studentClass} onChange={e => setStudentClass(e.target.value)} placeholder="8-й класс" />
                     </div>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
                         <Label htmlFor="description">Сабақтың сипаттамасы</Label>
-                        <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="Открытые множества, компактность." />
+                        <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="Ашық жиынтықтар, жинақылық." />
                     </div>
 
                     <Button onClick={handleSubmit} >{isLoading ? 'Генерация процесінде...' : 'Уақытты үнемдеу '}</Button> {/* Escaped the quotes */}
