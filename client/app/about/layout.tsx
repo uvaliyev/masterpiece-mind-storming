@@ -1,36 +1,24 @@
-import { Inter } from 'next/font/google'
+import "@/app/css/style.css";
+import { metadata } from "../metadata";
+import { Inter } from "next/font/google";
+import Header from "../components/ui/headerthree";
 
-import Header from '../components/ui/headertwo'
-import Footer from '../components/ui/footer'
 
 const inter = Inter({
-    subsets: ['latin'],
-    variable: '--font-inter',
-    display: 'swap'
-})
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
-export const metadata = {
-    title: 'Syllabus AI',
-    description: 'Syllabus AI',
-}
-
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
-    return (
-        <html lang="en">
-            <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
-                <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-                    <Header />
-                    <div className='py-10 m-5'>
-
-                        {children}
-                    </div>
-                    <Footer />
-                </div>
-            </body>
-        </html >
-    )
+export default function RootLayout({ children }: { children: React.ReactNode; }) {
+  return (
+    <html lang="en">
+      <head>
+        {/* You can include your meta tags, title, styles, etc. here */}
+      </head>
+      <body className={inter.variable}>
+        <Header></Header>
+        {children}
+      </body>
+    </html>
+  );
 }
