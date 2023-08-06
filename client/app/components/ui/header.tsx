@@ -37,9 +37,9 @@ export default function Header() {
                     <nav className="hidden md:flex md:grow">
                         {/* Desktop sign in links */}
                         <ul className="flex grow justify-end flex-wrap items-center">
-                            {/* <li>
-                                <Link href="/login" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Войти</Link>
-                            </li> */}
+                            <li>
+                                <Link href="/about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">О проекте</Link>
+                            </li>
                             <li>
                                 <Link href="/iloveyou" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                                     <span>Сгенерировать план урока</span>
