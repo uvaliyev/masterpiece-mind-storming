@@ -68,9 +68,6 @@ export default function MobileMenu() {
               <Link href="/ru" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>На русском🇷🇺</Link>
             </li>
             <li>
-              <Link href="/about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Жоба туралы</Link>
-            </li>
-            <li>
               <Link href="/ru/iloveyou" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2" onClick={() => setMobileNavOpen(false)}>
                 <span>Сабақ жоспарын құру</span>
                 <svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
