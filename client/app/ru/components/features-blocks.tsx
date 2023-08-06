@@ -12,7 +12,7 @@ export default function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span></h2>
-            <p className="text-xl text-gray-600">Syllabus AI - жоғары сапалы және жылдам сабақ жоспарын құру.</p>
+            <p className="text-xl text-gray-600">Syllabus AI - это качественная и быстрая генерация плана урока.</p>
           </div>
 
           {/* Items */}
@@ -31,7 +31,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Жоспарлау тиімділігі</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Эффективность планирования</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -47,7 +47,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Уақытты үнемдеу</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Экономия времени</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -64,7 +64,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Оқу процесін стандарттау</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Стандартизация учебного процесса</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -81,7 +81,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Оқытуды жекелендіру</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Персонализация обучения</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -97,7 +97,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Технологиялық интеграция</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Интеграция технологий</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -112,7 +112,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Жұмыс жүктемесі мен стрессті азайту</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Снижение нагрузки и стресса</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 

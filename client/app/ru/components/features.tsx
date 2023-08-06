@@ -34,8 +34,8 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4"> Сабақты жоспарлау сіздің <span className="bg-clip-text text-transparent bg-gradient-to-r  from-blue-500 to-teal-400"> қорқынышты арманыңызға</span>👻 айналуына жол бермеңіз</h1>
-            <p className="text-xl text-gray-600">Ұстаздық өте қорқынышты мәселелері бар қиын жұмыс...</p>
+            <h1 className="h2 mb-4"> Не позволяйте планированию уроков стать вашим <span className="bg-clip-text text-transparent bg-gradient-to-r  from-blue-500 to-teal-400">ночным кошмаром</span> 👻</h1>
+            <p className="text-xl text-gray-600">Преподавание - это сложная работа, в которой возникают очень страшные проблемы...</p>
           </div>
 
           {/* Section content */}
@@ -44,8 +44,8 @@ export default function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Сабақтарды дайындау және жоспарлау</h3>
-                <p className="text-xl text-gray-600">Оқыту стандарттарымен тиімді сабақ жоспарларын жазу қиын, олар үнемі жаңартылып отыруы керек..</p>
+                <h3 className="h3 mb-3">Подготовка и планирование уроков</h3>
+                <p className="text-xl text-gray-600">Затруднительно писать планы для эффективных уроков с учебными стандартами, их приходится постоянно обновлять..</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -55,8 +55,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Жылдам дамып келе жатқан технологиялар</div>
-                    <div className="text-gray-600">Технологияны жеткіліксіз білу қазіргі білім беру ресурстарын пайдалануды қиындатады</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Быстро развивающиеся технологии</div>
+                    <div className="text-gray-600">Недостаточное владение технологиями затрудняет использование современных образовательных ресурсов</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -70,8 +70,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Шектеулі ресурстар</div>
-                    <div className="text-gray-600">Жиі кездесетін мәселе - шектеулі ресурстар мен қолдау, бұл әлсіздік пен көңілсіздік сезімін тудырады.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Ограниченность ресурсов</div>
+                    <div className="text-gray-600">Частая проблема -  ограниченные ресурсами и поддержка, что вызвает чувство бессилия и фрустрации.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -85,8 +85,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Белгісіздік</div>
-                    <div className="text-gray-600">Жылдан жылға өзгеріп отыратын оқыту стандарттарының құбылмалылығы мұғалімдерді сабақ жоспарларын үнемі қайта қарауға және қайта құруға мәжбүр етеді.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Неопределенность</div>
+                    <div className="text-gray-600">Непостоянство учебных стандартов, меняющиеся от года к году, заставляет учителей постоянно пересматривать и перестраивать свои планы уроков.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

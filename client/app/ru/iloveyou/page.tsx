@@ -57,10 +57,10 @@ const Page = () => {
             <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 space-x-8 mx-auto max-w-4xl p-4">
                 <div className="w-full md:w-2/5 md:items-center">
                     <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-4xl">
-                        Сабақ жоспарын құру
+                        Сгенерировать план урока
                     </h1>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
-                        <Label htmlFor="lessonTopic">Сабақтың атауы</Label>
+                        <Label htmlFor="lessonTopic">Название урока</Label>
                         <Input type="text" id="lessonTopic" value={lessonTopic} onChange={e => setLessonTopic(e.target.value)} placeholder="Топология" />
                     </div>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -68,17 +68,17 @@ const Page = () => {
                         <Input type="text" id="studentClass" value={studentClass} onChange={e => setStudentClass(e.target.value)} placeholder="8-й класс" />
                     </div>
                     <div className="grid w-full max-w-sm items-center gap-1.5">
-                        <Label htmlFor="description">Сабақтың сипаттамасы</Label>
+                        <Label htmlFor="description">Описание урока</Label>
                         <Textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="Открытые множества, компактность." />
                     </div>
 
-                    <Button onClick={handleSubmit} >{isLoading ? 'Генерация процесінде...' : 'Уақытты үнемдеу '}</Button> {/* Escaped the quotes */}
+                    <Button onClick={handleSubmit} >{isLoading ? 'Генерируем...' : 'Сэкономить время (кнопка)'}</Button> {/* Escaped the quotes */}
                 </div>
                 <div className="w-full md:w-3/5 md:items-center">
                     <div className='space-y-4'>
                         {isLoading ? (
                             <>
-                                Жасалуда...
+                                Идет генерация
                             </>
                         ) : output ? (
                             <div className="scroll-m-20 tracking-tight text-base break-words whitespace-pre-line">
@@ -87,16 +87,16 @@ const Page = () => {
                         ) : (
                             <>
                                 <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-4xl">
-                                    Деректерді енгізіп, «Жасау» түймесін басыңыз.
+                                    Введите данные и нажмите "Сгенерировать".
                                 </h1>
                                 <h2 className="scroll-m-20 text-xl font-bold tracking-tight lg:text-xl">
-                                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span> қалай пайдалануға болады?
+                                    Как использовать <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span>?
                                 </h2>
-                                Сізге енгізу керек:
+                                Вам необходимо ввести:
                                 <ul>
-                                    <li>• Сабақтың тақырыбы</li>
-                                    <li>• Жас санаты</li>
-                                </ul>Одан кейін арнайы талаптарды қосуға немесе шығармашылық өрісті ашық қалдыруға болады. 💫Және воила!💫 Сабағың дайын.
+                                    <li>• Тему урока</li>
+                                    <li>• Возрастную категорию</li>
+                                </ul>Затем можете добавить специфические требования или оставить поле для творчества открытым. 💫И вуаля!💫 Ваш урок готов.
                                 <Image className="rounded-xl" src={Doner} alt="Big doner" width={500} height={300} />
                             </>
                         )}

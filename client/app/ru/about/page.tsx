@@ -4,18 +4,18 @@ import React, { useState } from 'react';
 const Faq = () => {
     const [faq, setFaq] = useState([
         {
-            question: 'Тіркелгіні қалай жасауға болады?',
-            answer: 'Біз сіздің деректеріңізді жинағымыз келмейді, сондықтан сайтты пайдалану арқылы сіз қауіпсіз екеніңізге сенімді бола аласыз.',
+            question: 'Как создать аккаунт?',
+            answer: 'Мы не хотим собирать Ваши данные, поэтому, пользуясь сайтом Вы можете быть уверены в Вашей безопасности.',
             open: false
         },
         {
-            question: 'Жобаны қалай қолдау керек?',
-            answer: 'Жоба әзірлеушінің жеке қаражаты есебінен жүзеге асырылады. VISA картасы 4400 4302 0494 8225. Kaspi: +7 705 875 32 80',
+            question: 'Как поддержать проект? (донаты)',
+            answer: 'Проект держиться за счет личных средств разработчика. Карта VISA 4400 4302 0494 8225. Kaspi: +7 705 875 32 80',
             open: false
         },
         {
-            question: 'Әзірлеушімен қалай байланысуға болады?',
-            answer: 'Telegram арқылы, <a href="@uvaliyev_a" title="" class="text-blue-600 transition-all duration-200 hover:underline">@uvaliyev_a</a>.',
+            question: 'Как можно связатсья с разработчком?',
+            answer: 'Через телеграмм, <a href="@uvaliyev_a" title="" class="text-blue-600 transition-all duration-200 hover:underline">@uvaliyev_a</a>.',
             open: false
         }
     ]);
@@ -36,8 +36,8 @@ const Faq = () => {
         <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Жиі қойылатын сұрақтар</h2>
-                    <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Syllabus AI, - пайдаланушыларға қамқорлық туралы❤️
+                    <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Часто задаваемые вопросы</h2>
+                    <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">Syllabus AI, - про заботу к пользователям❤️
                     </p>
                 </div>
 
@@ -59,7 +59,7 @@ const Faq = () => {
                     ))}
                 </div>
 
-                <p className="text-center text-gray-600 textbase mt-9">Сұрағыңызға жауап таба алмадыңыз ба? <a href="https://t.me/uvaliyev_a" title="" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Менімен хабарласыңыз</a></p>
+                <p className="text-center text-gray-600 textbase mt-9">Не нашли ответ, на интересующий вопрос? <a href="https://t.me/uvaliyev_a" title="" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Свяжитесь со мной</a></p>
             </div>
         </section>
     );

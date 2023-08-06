@@ -35,10 +35,10 @@ export default function Header() {
                     <b>Syllabus AI</b>
                     <ul className="flex grow justify-end flex-wrap items-center">
                         <li>
-                            <Link href="/ru" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">На русском🇷🇺</Link>
+                            <Link href="/" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Қазақ тілінде🇰🇿</Link>
                         </li>
                         <li>
-                            <Link href="/about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Жоба жайлы</Link>
+                            <Link href="/ru/about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">О проекте</Link>
                         </li>
 
                     </ul>
