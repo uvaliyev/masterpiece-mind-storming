@@ -45,7 +45,7 @@ export default function Footer() {
                         <div className="mb-2">
                             <Logo />
                         </div>
-                        <p>&copy; Шедевр Штурма Сознания. Все права защищены.</p>
+                        <p>&copy; Syllabus AI. Все права защищены.</p>
                     </div>
 
                 </div>

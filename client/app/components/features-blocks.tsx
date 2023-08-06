@@ -11,8 +11,8 @@ export default function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Шедевр штурма сознания</span></h2>
-            <p className="text-xl text-gray-600">ШШС - это не только качественная и быстрая генерация плана урока, но и быстрое создание презентаций под урок.</p>
+            <h2 className="h2 mb-4"><span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span></h2>
+            <p className="text-xl text-gray-600">Syllabus AI - это не только качественная и быстрая генерация плана урока, но и быстрое создание презентаций под урок.</p>
           </div>
 
           {/* Items */}

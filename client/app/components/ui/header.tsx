@@ -31,7 +31,7 @@ export default function Header() {
                     <div className="shrink-0 mr-4">
                         <Logo />
                     </div>
-                    <b>ШШС: Шедевр штурма сознания</b>
+                    <b>Syllabus AI</b>
 
                     {/* Desktop navigation */}
                     <nav className="hidden md:flex md:grow">

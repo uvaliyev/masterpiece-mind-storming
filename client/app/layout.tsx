@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Шедевр штурма сознания',
-  description: 'Шедевр штурма сознания',
+  title: 'Syllabus AI',
+  description: 'Syllabus AI',
 }
 
 export default function RootLayout({

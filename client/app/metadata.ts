@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-const title = "Шедевр штурма сознания";
+const title = "Syllabus AI";
 const description =
     "This is a Next.js starter kit that uses Next-Auth for simple email + password login and a Postgres database to persist the data.";
 

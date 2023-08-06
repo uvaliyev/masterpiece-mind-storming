@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import TestimonialImage from '/public/images/testimonial.jpg'
+import TestimonialImage1 from '/public/images/testimonial1.png'
+import TestimonialImage2 from '/public/images/testimonial2.png'
+import TestimonialImage3 from '/public/images/testimonial3.png'
 
 export default function Testimonials() {
   return (
@@ -27,7 +29,7 @@ export default function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Более 2 преподавателей по всему миру доверились нашему сервису</h2>
+            <h2 className="h2 mb-4">Более 200 пользователей по всему миру доверились <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span> </h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">Наши инновационные инструменты для планирования уроков помогают учителям во всем мире упростить их повседневные задачи и повысить эффективность обучения.
             </p>
             <p className="text-sm  text-gray-300" data-aos="zoom-y-out">Компании ниже еще не стали нашими клиентами</p>
@@ -76,6 +78,48 @@ export default function Testimonials() {
           {/* Testimonials */}
           <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
+                  </svg>
+                  <Image className="relative rounded-full" src={TestimonialImage1} width={96} height={96} alt="Testimonial 01" />
+                </div>
+                <blockquote className="text-xl font-medium mb-4">
+                  “Здравствуйте! Спасибо, обязательно изучу и попробую. Как раз работаю над этой темой. Я учитель русского языка и литературы.““
+                </blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Елена Филимонова</cite>
+                <div className="text-gray-600">
+                  <span></span> Преподаватель русского языка
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+            <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+
+              {/* Testimonial */}
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2 text-center">
+                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
+                  </svg>
+                  <Image className="relative rounded-full" src={TestimonialImage2} width={96} height={96} alt="Testimonial 01" />
+                </div>
+                <blockquote className="text-xl font-medium mb-4 text-center">
+                  Привет, классное приложение! Супер! Как учитель, буду пользоваться🔥
+                </blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Berdibek Kazygulov</cite>
+                <div className="text-gray-600">
+                  <span></span> Преподаватель робототехники
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+            <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
 
               {/* Testimonial */}
               <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
@@ -83,7 +127,7 @@ export default function Testimonials() {
                   <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-blue-500" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                     <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
                   </svg>
-                  <Image className="relative rounded-full" src={TestimonialImage} width={96} height={96} alt="Testimonial 01" />
+                  <Image className="relative rounded-full" src={TestimonialImage3} width={96} height={96} alt="Testimonial 01" />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
                   “Много багов, функционал есть слава богу. Крутая генерация. Мне очень нравится этот продукт, и я бы рекомендовал его всем. Пользоваться им проще простого, а наши многочисленные учителя прекрасно себя чувствуют. Спасибо.““
@@ -93,6 +137,15 @@ export default function Testimonials() {
                   <span></span> <a className="text-blue-600 hover:underline" href="https://www.nfactorial.school/nfactorial-incubator-2023">@NFactorial</a> mentor
                 </div>
               </div>
+              <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+                <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+
+
+
+
+                </div>
+              </div>
+
 
             </div>
           </div>

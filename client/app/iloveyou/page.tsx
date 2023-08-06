@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@radix-ui/react-label';
 import { Input } from '@/components/ui/input';
-import Doner from "/public/cats.png"
+import Doner from "/public/teach-hero.png"
 import Markdown from 'markdown-to-jsx';
 
 const Page = () => {
@@ -90,8 +90,13 @@ const Page = () => {
                                     Введите данные и нажмите "Сгенерировать".
                                 </h1>
                                 <h2 className="scroll-m-20 text-xl font-bold tracking-tight lg:text-xl">
-                                    Almaty incubator students
+                                    Как использовать <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Syllabus AI</span>?
                                 </h2>
+                                Вам необходимо ввести:
+                                <ul>
+                                    <li>• Тему урока</li>
+                                    <li>• Возрастную категорию</li>
+                                </ul>Затем можете добавить специфические требования или оставить поле для творчества открытым. 💫И вуаля!💫 Ваш урок готов.
                                 <Image className="rounded-xl" src={Doner} alt="Big doner" width={500} height={300} />
                             </>
                         )}
